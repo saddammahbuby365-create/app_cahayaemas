@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Emas Cahaya</title>
+    <link rel="icon" href="assets/images/MEKAR JEWRLY 2-01.png" type="image/png" sizes="192x192">
+
+
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-fixed">
+    <!-- start of header  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/mekarlogo.png" alt="Logo" width="140" height="90">
+            </a>
+
+            <!-- Toggle Button (Mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <!-- Menu Tengah -->
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Perhiasan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Lokasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak Kami</a>
+                    </li>
+                </ul>
+
+                <!-- Menu Kanan -->
+                <div class="d-flex align-items-center gap-3">
+
+                    <!-- Search -->
+                    <form class="d-none d-lg-flex align-items-center">
+                        <input class="form-control form-control-sm me-2" type="search" placeholder="Search...">
+                        <button class="btn btn-outline-secondary btn-sm" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+
+                    <!-- Cart -->
+                    <a href="#" class="position-relative text-dark">
+                        <i class="fas fa-shopping-bag fs-5"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            3
+                        </span>
+                    </a>
+
+                    <!-- User -->
+                    <a href="#" class="text-dark">
+                        <i class="fas fa-user-circle fs-5"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- header ends  -->
+
+    <div id="viewport">
+        <div id="js-scroll-content">
+            <section class="main-banner" id="home">
+                <div class="js-parallax-scene">
+                    <div class="banner-shape-1 w-100" data-depth="0.30">
+                        <img src="https://img2.pngdownload.id/20180206/kxw/av275dc8z.webp" alt="">
+                    </div>
+                    <div class="banner-shape-2 w-100" data-depth="0.25">
+                        <img src="https://png.pngtree.com/png-vector/20240729/ourmid/pngtree-classic-gold-bangle-bracelet-timeless-jewelry-for-every-occasion-png-image_13274415.png"
+                            alt="">
+                    </div>
+                </div>
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="banner-text">
+                                    <h1 class="h1-title">
+                                        Selamat Datang Di Toko
+                                        Emas
+                                        <span>Cahaya</span>
+
+                                    </h1>
+                                    <p style="text-align: justify;">Selamat datang di Toko Emas Cahaya, pusat perhiasan
+                                        berkualitas yang menawarkan berbagai
+                                        koleksi emas dan perhiasan pilihan. Temukan keindahan dan keanggunan perhiasan
+                                        emas
+                                        kami yang dirancang khusus untuk melengkapi penampilan Anda. Kami berkomitmen
+                                        memberikan kualitas terbaik dan layanan ramah untuk setiap pelanggan.</p>
+                                    <div class="banner-btn mt-4">
+                                        <a href="#menu" class="sec-btn">Perhiasan Lainnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="banner-img-wp">
+                                    <div class="banner-img"
+                                        style="background-image: url(https://www.passionjewelry.co.id/uploads/rekomendasi-model-cincin-emas-wanita-terbaru-unik-dan-menarik-147-2024-08-16-170315.jpg);">
+                                    </div>
+                                </div>
+                                <div class="banner-img-text mt-4 m-auto">
+                                    <h5 class="h5-title">Cincin Permata</h5>
+                                    <p style="text-align: justify;"> Cincin Permata adalah cincin elegan dengan hiasan
+                                        permata berkualitas,
+                                        sempurna untuk melambangkan momen berharga atau sebagai hadiah istimewa.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="brands-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="brand-title mb-5">
+                                <h5 class="h5-title">Dipercaya oleh Perusahaan:</h5>
+                            </div>
+                            <div class="brands-row">
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b1.png" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b2.png" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b3.png" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b4.png" alt="">
+                                </div>
+                                <div class="brands-box">
+                                    <img src="assets/images/brands/b5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-sec section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="sec-title text-center mb-5">
+                                <p class="sec-sub-title mb-3">Tentang kami</p>
+                                <h2 class="h2-title">Temukan Cerita Kami <span>Dari Toko Emas Cahaya</span></h2>
+                                <div class="sec-title-shape mb-4">
+                                    <img src="assets/images/title-shape.svg" alt="">
+                                </div>
+                                <p style="text-align: justify;">Hai sobat Cahaya, perkenalkan kami hadir untuk
+                                    menawarkan berbagai macam variasi kostum
+                                    produk model dan ukuran yang disesuaikan dengan pesanan pelanggan, dan kebutuhan
+                                    pelanggan,
+                                    kami melayani pesanan grosir dan eceran, kami juga melayani jasa servis, chrome
+                                    emas, perak.
+                                    Tenaga kami telah teruji dengan pengalaman belasan tahun yang menggeluti
+                                    dibidangnya.
+                                    Kadar yang kami gunakan untuk emas adalah 8K, 10K dan 18K, termasuk 24K, sedangkan
+                                    perak
+                                    kami menggunakan kadar 92,5% (925). <br> <br>
+                                    Yuk penuhi kebutuhan lifestyle anda bersama Toko Emas Cahaya.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 m-auto">
+                            <div class="about-video">
+                                <div class="about-video-img"
+                                    style="background-image: url(assets/images/thumnailemas.jpg);">
+                                </div>
+                                <div class="play-btn-wp">
+                                    <a href="assets/images/videoperhiasan.mp4" data-fancybox="video"
+                                        class="play-btn">
+                                        <i class="uil uil-play"></i>
+
+                                    </a>
+                                    <span>Proses Pembuatan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section style="background-image: url(assets/images/menu-bg.png);"
+                class="our-menu section bg-light repeat-img" id="menu">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Perhiasan Kami</p>
+                                    <h2 class="h2-title">Kilau Kepercayaan, <span>Investasi Berharga!</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-tab-wp">
+                            <div class="row">
+                                <div class="col-lg-12 m-auto">
+                                    <div class="menu-tab text-center">
+                                        <ul class="filters">
+                                            <div class="filter-active"></div>
+                                            <li class="filter" data-filter=".all, .breakfast, .lunch, .dinner">
+                                                <img src="assets/images/menu-1.png" alt="">
+                                                Semua
+                                            </li>
+                                            <li class="filter" data-filter=".breakfast">
+                                                <img src="assets/images/menu-2.png" alt="">
+                                                Cincin
+                                            </li>
+                                            <li class="filter" data-filter=".lunch">
+                                                <img src="assets/images/menu-3.png" alt="">
+                                                Gelang
+                                            </li>
+                                            <li class="filter" data-filter=".dinner">
+                                                <img src="assets/images/menu-4.png" alt="">
+                                                Anting
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu-list-row">
+                            <div class="row g-xxl-5 bydefault_show" id="menu-dish">
+                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/publish1.jpg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Cincin Couple</h3>
+                                            <p>15 Grm (16k)</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Tipe</p>
+                                                    <b>Perak</b>
+                                                </li>
+                                                <li>
+                                                    <p>Jumlah</p>
+                                                    <b>2</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>IDR. 300.000</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 2 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/publish2.jpg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4.3
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Cincin Model Audi</h3>
+                                            <p>3 Grm (16k)</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Gold</b>
+                                                </li>
+                                                <li>
+                                                    <p>Jumlah</p>
+                                                    <b>1</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>IDR. 300.000</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/publish3.jpg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Gelang Kendi</h3>
+                                            <p>3 Grm (16k)</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Gold</b>
+                                                </li>
+                                                <li>
+                                                    <p>Jumlah</p>
+                                                    <b>1</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>IDR. 300.000</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 4 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/publish4.jpg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            4.5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Gelang SI.SE.SA Rolex</h3>
+                                            <p>15 Grm (18k)</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Gold</b>
+                                                </li>
+                                                <li>
+                                                    <p>Jumlah</p>
+                                                    <b>1</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>IDR. 300.000</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 5 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/publish5.jpg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Anting Bunga Cahaya</h3>
+                                            <p>5 Grm (24k)</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Gold</b>
+                                                </li>
+                                                <li>
+                                                    <p>Jumlah</p>
+                                                    <b>1</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>IDR. 300.000</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 6 -->
+                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
+                                    <div class="dish-box text-center">
+                                        <div class="dist-img">
+                                            <img src="assets/images/dish/publish6.jpg" alt="">
+                                        </div>
+                                        <div class="dish-rating">
+                                            5
+                                            <i class="uil uil-star"></i>
+                                        </div>
+                                        <div class="dish-title">
+                                            <h3 class="h3-title">Anting Klep Wavy</h3>
+                                            <p>5 Grm (22k)</p>
+                                        </div>
+                                        <div class="dish-info">
+                                            <ul>
+                                                <li>
+                                                    <p>Type</p>
+                                                    <b>Gold</b>
+                                                </li>
+                                                <li>
+                                                    <p>Jumlah</p>
+                                                    <b>1</b>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dist-bottom-row">
+                                            <ul>
+                                                <li>
+                                                    <b>IDR. 300.000</b>
+                                                </li>
+                                                <li>
+                                                    <button class="dish-add-btn">
+                                                        <i class="uil uil-plus"></i>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="two-col-sec section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="sec-img mt-5">
+                                <img src="assets/images/Jasa/custom.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="sec-text">
+                                <h2 class="xxl-title">Jasa Custom</h2>
+                                <p style="text-align: justify;">Toko Emas Cahaya menghadirkan layanan Jasa Custom untuk
+                                    Anda yang menginginkan perhiasan dengan sentuhan pribadi dan unik. Dengan layanan
+                                    ini, Anda dapat merancang sendiri perhiasan sesuai keinginan, baik dari segi desain,
+                                    ukuran, maupun material yang digunakan. Kami memahami bahwa setiap perhiasan
+                                    memiliki nilai emosional dan cerita khusus, sehingga kami berkomitmen untuk
+                                    mewujudkan ide dan keinginan Anda ke dalam karya yang sempurna.</p>
+                                <p style="text-align: justify;">Tim perajin kami yang berpengalaman akan membantu Anda
+                                    dalam setiap tahap pembuatan, mulai dari pemilihan bentuk, penentuan ukuran, hingga
+                                    penambahan detail khusus seperti batu permata pilihan. Dengan kombinasi teknologi
+                                    modern dan keterampilan tangan yang terampil, Toko Emas Cahaya memastikan bahwa
+                                    setiap detail perhiasan yang dibuat memenuhi standar kualitas terbaik, mencerminkan
+                                    gaya dan karakter pribadi Anda.</p>
+                                <p style="text-align: justify;">Bergabunglah bersama banyak pelanggan setia kami yang
+                                    telah menemukan kepuasan dalam memiliki perhiasan eksklusif yang tak hanya indah,
+                                    tetapi juga penuh makna. Temukan kemewahan, keunikan, dan kualitas yang hanya bisa
+                                    Anda dapatkan di Toko Emas Cahaya.</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="two-col-sec section pt-0">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 order-lg-1 order-2">
+                            <div class="sec-text">
+                                <h2 class="xxl-title">Jasa Cuci</h2>
+                                <p style="text-align: justify;">Toko Emas Cahaya juga menawarkan layanan Jasa Cuci
+                                    Perhiasan untuk menjaga kilau dan keindahan perhiasan Anda. Kami memahami bahwa
+                                    perhiasan yang sering dipakai cenderung terkena kotoran, minyak, atau debu, yang
+                                    dapat mengurangi kilaunya seiring waktu. Melalui proses pembersihan profesional,
+                                    kami memastikan perhiasan Anda kembali bersinar seperti baru.</p>
+                                <p style="text-align: justify;">Dalam Jasa Cuci kami, setiap perhiasan dibersihkan
+                                    dengan teknik khusus dan peralatan modern untuk memastikan keamanan dan kualitas
+                                    terbaik. Mulai dari perhiasan emas, berlian, hingga batu permata lainnya, tim ahli
+                                    kami menangani setiap proses dengan hati-hati dan teliti agar tetap terjaga kualitas
+                                    serta ketahanan perhiasan Anda. Kami juga menawarkan opsi pemolesan untuk perhiasan
+                                    yang membutuhkan perawatan lebih, membuatnya tampak lebih bersih, lebih berkilau,
+                                    dan bebas dari goresan kecil.</p>
+                                <p style="text-align: justify;">Kami berkomitmen untuk memberikan pelayanan terbaik
+                                    bagi pelanggan kami. Datanglah ke Toko Emas Cahaya dan percayakan perhiasan Anda
+                                    kepada kami untuk perawatan profesional yang aman dan berkualitas.</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-5 order-lg-2 order-1">
+                            <div class="sec-img mt-5">
+                                <img src="assets/images/Jasa/cuci.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="book-table section bg-light">
+                <div class="book-table-shape">
+                    <img src="assets/images/table-leaves-shape.png" alt="">
+                </div>
+
+                <div class="book-table-shape book-table-shape2">
+                    <img src="assets/images/table-leaves-shape.png" alt="">
+                </div>
+
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Lokasi</p>
+                                    <h2 class="h2-title">Google Maps</h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="book-table-info">
+                            <div class="row align-items-center">
+                                <div class="col-lg-4">
+                                    <div class="table-title text-center">
+                                        <h3>Every Day</h3>
+                                        <p>00:00 AM - 12:00 PM</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="call-now text-center">
+                                        <i class="uil uil-phone"></i>
+                                        <a href="tel:+91-8866998866">+62 81256653063</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="table-title text-center">
+                                        <h3>Senin - Minggu</h3>
+                                        <p>00:00 - 23:59 WITA</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="gallery">
+                            <div class="col-lg-10 m-auto">
+                                <div class="swiper-wrapper">
+                                    <a href="assets/images/map.jpeg" data-fancybox="table-slider"
+                                        class="book-table-img back-img swiper-slide"
+                                        style="background-image: url(assets/images/map.jpeg)"></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+            </section>
+
+            <section class="our-team section">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Tim Kami</p>
+                                    <h2 class="h2-title">Temui Tim Kami</h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 swiper-slide">
+                            <div class="team-box text-center">
+                                <div style="background-image: url(assets/images/Tim/Boby.jpg);"
+                                    class="team-img back-img">
+
+                                </div>
+                                <h3 class="h3-title">boby</h3>
+                                <p class="team-sub-title">Backend</p>
+                                <div class="social-icon">
+                                    <div class="social-icon">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/yk.boby?igsh=MXJsYTBvNXZsMXRxeg==">
+                                                    <i class="uil uil-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="uil uil-youtube"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-lg-4 swiper-slide">
+                                        <div class="team-box text-center">
+                                            <div style="background-image: url(assets/images/Tim/falah.jpeg);"
+                                                class="team-img back-img">
+
+                                            </div>
+                                            <h3 class="h3-title">falah</h3>
+                                            <p class="team-sub-title">ui ux</p>
+                                            <div class="social-icon">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a
+                                                            href="https://www.instagram.com/yk.boby?igsh=MXJsYTBvNXZsMXRxeg==">
+                                                            <i class="uil uil-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="uil uil-youtube"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+            </section>
+
+            <section class="testimonials section bg-light">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">Apa Kata Mereka</p>
+                                    <h2 class="h2-title">Apa Yang Dikatakan <span>Costumer Tentang Kami</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="testimonials-img">
+                                    <img src="assets/images/MEKAR JEWRLY 2-01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/Testimoni/aca\ .jpeg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:85%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    aca
+                                                </h3>
+                                                <p>Pengalaman berbelanja di Emas Cahaya sangat menyenangkan!
+                                                    Pelayanan yang ramah dan informatif.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/Testimoni/dika.jpeg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:80%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    randyka
+                                                </h3>
+                                                <p>Toko Emas Cahaya selalu memberikan yang terbaik. Harga yang
+                                                    kompetitif dan desain yang elegan.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/Testimoni/dika\ 2.jpeg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:89%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    dika heker
+                                                </h3>
+                                                <p>Emas Cahaya adalah tempat terbaik untuk membeli perhiasan emas.
+                                                    Saya membeli kalung dan gelang di sini.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="testimonials-box">
+                                            <div class="testimonial-box-top">
+                                                <div class="testimonials-box-img back-img"
+                                                    style="background-image: url(assets/images/Testimoni/udin.jpeg);">
+                                                </div>
+                                                <div class="star-rating-wp">
+                                                    <div class="star-rating">
+                                                        <span class="star-rating__fill" style="width:100%"></span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="testimonials-box-text">
+                                                <h3 class="h3-title">
+                                                    udin
+                                                </h3>
+                                                <p>Saya sudah beberapa kali membeli perhiasan di Emas Cahaya, dan selalu
+                                                    puas.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq-sec section-repeat-img" style="background-image: url(assets/images/faq-bg.png);">
+                <div class="sec-wp">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="sec-title text-center mb-5">
+                                    <p class="sec-sub-title mb-3">faqs</p>
+                                    <h2 class="h2-title">Pertanyaan <span>yang sering diajukan</span></h2>
+                                    <div class="sec-title-shape mb-4">
+                                        <img src="assets/images/title-shape.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <div class="faq-box">
+                                <h4 class="h4-title">Apakah bisa beli eceran atau harus grosir?</h4>
+                                <p>Anda bisa membeli eceran atau grosiran di toko kami.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">Apakah disini bisa custom model sendiri?</h4>
+                                <p>Bisa kami membuka layanan custom yang sesuai dengan model yang diinginkan.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">Apakah toko ini terpercaya?</h4>
+                                <p>Sangat terpercaya karena Tenaga kami telah teruji dengan pengalaman
+                                    belasan tahun yang menggeluti dibidangnya, Dan mendapatkan hasil yang terbaik
+                                    .</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">Apakah tersedia disemua platform?</h4>
+                                <p>Kami hanya memiliki 2 platform by Instagram dan Whatsapp</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">Apakah ada jasa servis dan lain-lain atau hanya custom saja?</h4>
+                                <p>Kami melayani jasa servis, chrome emas, perak.</p>
+                            </div>
+                            <div class="faq-box">
+                                <h4 class="h4-title">berapa kadar yang digunakan untuk emas dan perak?</h4>
+                                <p>Kadar yang kami gunakan untuk emas adalah 8K, 10K dan 18K, termasuk 24K,
+                                    sedangkan perak kami menggunakan kadar 92,5% (925)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <div class="bg-pattern bg-light repeat-img"
+                style="background-image: url(assets/images/blog-pattern-bg.png);">
+                <section class="blog-sec section" id="blog">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sec-title text-center mb-5">
+                                        <p class="sec-sub-title mb-3">Blog Kami</p>
+                                        <h2 class="h2-title">Publikasi Terbaru</span></h2>
+                                        <div class="sec-title-shape mb-4">
+                                            <img src="assets/images/title-shape.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style="background-image: url(assets/images/blog/publish1.jpg);"></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">27, Oktober, 2024</p>
+                                            <a href="#" class="h4-title">Cincin Couple</a>
+                                            <p style="text-align: justify;">Cincin Couple, sepasang cincin eksklusif
+                                                dengan desain unik,
+                                                hanya tersedia dalam jumlah terbatas, simbol cinta dan komitmen yang
+                                                istimewa untuk pasangan.</p>
+                                            <a href="#" class="sec-btn">Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style="background-image: url(assets/images/blog/publish2.jpg);"></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">25, Juni, 2024</p>
+                                            <a href="#" class="h4-title">Gelang SI.SE.SA Rolex</a>
+                                            <p style="text-align: justify;">Gelang SI.SE.SA Rolex adalah aksesori mewah
+                                                yang menggabungkan desain elegan dan kualitas tinggi,
+                                                cocok untuk mereka yang mengutamakan kemewahan dan gaya.</p>
+                                            <a href="#" class="sec-btn">Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="blog-box">
+                                        <div class="blog-img back-img"
+                                            style="background-image: url(assets/images/blog/publish3.jpg);"></div>
+                                        <div class="blog-text">
+                                            <p class="blog-date">25, Juni, 2024</p>
+                                            <a href="#" class="h4-title">Cincin Model Audi</a>
+                                            <p style="text-align: justify;">Cincin Model Audi adalah cincin dengan
+                                                desain unik terinspirasi dari keanggunan dan gaya khas Audi.
+                                                Memadukan kesan modern dan elegan, cincin ini cocok bagi mereka yang
+                                                menyukai tampilan mewah dan berkelas.</p>
+                                            <a href="#" class="sec-btn">Selengkapnya</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="newsletter-sec section pt-0">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 m-auto">
+                                    <div class="newsletter-box text-center back-img white-text"
+                                        style="background-image: url(assets/images/news.jpg);">
+                                        <div class="bg-overlay dark-overlay"></div>
+                                        <div class="sec-wp">
+                                            <div class="newsletter-box-text">
+                                                <h2 class="h2-title">Berlangganan ditoko kami</h2>
+                                                <p>Berlangganan di Toko Emas Cahaya dan dapatkan penawaran spesial
+                                                    untuk koleksi perhiasan emas pilihan.</p>
+                                            </div>
+                                            <form action="#" class="newsletter-form">
+                                                <input type="email" class="form-input"
+                                                    placeholder="Maskin Email Anda" required>
+                                                <button type="submit" class="sec-btn primary-btn">Kirim</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- footer starts  -->
+            <footer class="site-footer" id="contact">
+                <div class="top-footer section">
+                    <div class="sec-wp">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="footer-info">
+                                        <div class="footer-logo">
+                                            <a href="index.html">
+                                                <img src="MEKAR JEWRLY 2-01.png" alt="">
+                                            </a>
+                                        </div>
+                                        <p>Ikuti Kami Di Semua Sosial Media DIbawah.
+                                        </p>
+                                        <div class="social-icon">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://www.instagram.com/tokoemasmekar" target="_blank">
+                                                        <i class="uil uil-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://wa.me/+6281256653063" target="_blank">
+                                                        <i class="uil uil-whatsapp"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="footer-flex-box">
+                                        <div class="footer-table-info">
+                                            <h3 class="h3-title">Jam Buka</h3>
+                                            <ul>
+                                                <li><i class="uil uil-clock"></i> Senin - Minggu : 00:00 - 23:59 WITA
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu food-nav-menu">
+                                            <h3 class="h3-title">Links</h3>
+                                            <ul class="column-2">
+                                                <li>
+                                                    <a href="#home" class="footer-active-menu">Home</a>
+                                                </li>
+                                                <li><a href="#about">Tentang</a></li>
+                                                <li><a href="#menu">Perhiasan</a></li>
+                                                <li><a href="#gallery">Lokasi</a></li>
+                                                <li><a href="#blog">Blog</a></li>
+                                                <li><a href="#contact">Kontak</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer-menu">
+                                            <h3 class="h3-title">Perusahaan</h3>
+                                            <ul>
+                                                <li><a href="#">S&K</a></li>
+                                                <li><a href="#">Kebijakan Privasi</a></li>
+                                                <li><a href="#">Kebijakan Cookie</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2024 <span class="name">TokoEmasCahaya</span> All Rights
+                                        Reserved.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scrolltop"><i class="uil uil-angle-up"></i></button>
+                    </div>
+                </div>
+            </footer>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- jquery  -->
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!-- fontawesome  -->
+    <script src="assets/js/font-awesome.min.js"></script>
+
+    <!-- swiper slider  -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- mixitup -- filter  -->
+    <script src="assets/js/jquery.mixitup.min.js"></script>
+
+    <!-- fancy box  -->
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+
+    <!-- parallax  -->
+    <script src="assets/js/parallax.min.js"></script>
+
+    <!-- gsap  -->
+    <script src="assets/js/gsap.min.js"></script>
+
+    <!-- scroll trigger  -->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!-- scroll to plugin  -->
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <!-- rellax  -->
+    <!-- <script src="assets/js/rellax.min.js"></script> -->
+    <!-- <script src="assets/js/rellax-custom.js"></script> -->
+    <!-- smooth scroll  -->
+    <script src="assets/js/smooth-scroll.js"></script>
+    <!-- custom js  -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
