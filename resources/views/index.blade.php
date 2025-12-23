@@ -83,10 +83,23 @@
                         </span>
                     </a>
 
-                    <!-- User -->
-                    <a href="#" class="text-dark">
-                        <i class="fas fa-user-circle fs-5"></i>
-                    </a>
+                    <!-- User / Auth -->
+                    @guest
+                        <!-- BELUM LOGIN -->
+                        <a href="{{ url('/login') }}" class="text-dark">
+                            <i class="fas fa-user-circle fs-5"></i>
+                        </a>
+                    @endguest
+
+                    @auth
+                        <!-- SUDAH LOGIN -->
+                        <form action="{{ route('logout') }}" method="POST" class="d-inline">
+                            @csrf
+                            <button type="submit" class="btn p-0 border-0 bg-transparent text-dark">
+                                <i class="fas fa-sign-out-alt fs-5"></i>
+                            </button>
+                        </form>
+                    @endauth
 
                 </div>
             </div>
@@ -265,167 +278,7 @@
                         </div>
                         <div class="menu-list-row">
                             <div class="row g-xxl-5 bydefault_show" id="menu-dish">
-                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
-                                    <div class="dish-box text-center">
-                                        <div class="dist-img">
-                                            <img src="assets/images/dish/publish1.jpg" alt="">
-                                        </div>
-                                        <div class="dish-rating">
-                                            5
-                                            <i class="uil uil-star"></i>
-                                        </div>
-                                        <div class="dish-title">
-                                            <h3 class="h3-title">Cincin Couple</h3>
-                                            <p>15 Grm (16k)</p>
-                                        </div>
-                                        <div class="dish-info">
-                                            <ul>
-                                                <li>
-                                                    <p>Tipe</p>
-                                                    <b>Perak</b>
-                                                </li>
-                                                <li>
-                                                    <p>Jumlah</p>
-                                                    <b>2</b>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="dist-bottom-row">
-                                            <ul>
-                                                <li>
-                                                    <b>IDR. 300.000</b>
-                                                </li>
-                                                <li>
-                                                    <button class="dish-add-btn">
-                                                        <i class="uil uil-plus"></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <!-- 2 -->
-                                <div class="col-lg-4 col-sm-6 dish-box-wp breakfast" data-cat="breakfast">
-                                    <div class="dish-box text-center">
-                                        <div class="dist-img">
-                                            <img src="assets/images/dish/publish2.jpg" alt="">
-                                        </div>
-                                        <div class="dish-rating">
-                                            4.3
-                                            <i class="uil uil-star"></i>
-                                        </div>
-                                        <div class="dish-title">
-                                            <h3 class="h3-title">Cincin Model Audi</h3>
-                                            <p>3 Grm (16k)</p>
-                                        </div>
-                                        <div class="dish-info">
-                                            <ul>
-                                                <li>
-                                                    <p>Type</p>
-                                                    <b>Gold</b>
-                                                </li>
-                                                <li>
-                                                    <p>Jumlah</p>
-                                                    <b>1</b>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="dist-bottom-row">
-                                            <ul>
-                                                <li>
-                                                    <b>IDR. 300.000</b>
-                                                </li>
-                                                <li>
-                                                    <button class="dish-add-btn">
-                                                        <i class="uil uil-plus"></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 3 -->
-                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
-                                    <div class="dish-box text-center">
-                                        <div class="dist-img">
-                                            <img src="assets/images/dish/publish3.jpg" alt="">
-                                        </div>
-                                        <div class="dish-rating">
-                                            4
-                                            <i class="uil uil-star"></i>
-                                        </div>
-                                        <div class="dish-title">
-                                            <h3 class="h3-title">Gelang Kendi</h3>
-                                            <p>3 Grm (16k)</p>
-                                        </div>
-                                        <div class="dish-info">
-                                            <ul>
-                                                <li>
-                                                    <p>Type</p>
-                                                    <b>Gold</b>
-                                                </li>
-                                                <li>
-                                                    <p>Jumlah</p>
-                                                    <b>1</b>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="dist-bottom-row">
-                                            <ul>
-                                                <li>
-                                                    <b>IDR. 300.000</b>
-                                                </li>
-                                                <li>
-                                                    <button class="dish-add-btn">
-                                                        <i class="uil uil-plus"></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 4 -->
-                                <div class="col-lg-4 col-sm-6 dish-box-wp lunch" data-cat="lunch">
-                                    <div class="dish-box text-center">
-                                        <div class="dist-img">
-                                            <img src="assets/images/dish/publish4.jpg" alt="">
-                                        </div>
-                                        <div class="dish-rating">
-                                            4.5
-                                            <i class="uil uil-star"></i>
-                                        </div>
-                                        <div class="dish-title">
-                                            <h3 class="h3-title">Gelang SI.SE.SA Rolex</h3>
-                                            <p>15 Grm (18k)</p>
-                                        </div>
-                                        <div class="dish-info">
-                                            <ul>
-                                                <li>
-                                                    <p>Type</p>
-                                                    <b>Gold</b>
-                                                </li>
-                                                <li>
-                                                    <p>Jumlah</p>
-                                                    <b>1</b>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="dist-bottom-row">
-                                            <ul>
-                                                <li>
-                                                    <b>IDR. 300.000</b>
-                                                </li>
-                                                <li>
-                                                    <button class="dish-add-btn">
-                                                        <i class="uil uil-plus"></i>
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <!-- 5 -->
                                 <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
@@ -459,49 +312,11 @@
                                                     <b>IDR. 300.000</b>
                                                 </li>
                                                 <li>
-                                                    <button class="dish-add-btn">
+                                                    <button class="dish-add-btn add-to-cart" data-id="5">
                                                         <i class="uil uil-plus"></i>
                                                     </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- 6 -->
-                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
-                                    <div class="dish-box text-center">
-                                        <div class="dist-img">
-                                            <img src="assets/images/dish/publish6.jpg" alt="">
-                                        </div>
-                                        <div class="dish-rating">
-                                            5
-                                            <i class="uil uil-star"></i>
-                                        </div>
-                                        <div class="dish-title">
-                                            <h3 class="h3-title">Anting Klep Wavy</h3>
-                                            <p>5 Grm (22k)</p>
-                                        </div>
-                                        <div class="dish-info">
-                                            <ul>
-                                                <li>
-                                                    <p>Type</p>
-                                                    <b>Gold</b>
-                                                </li>
-                                                <li>
-                                                    <p>Jumlah</p>
-                                                    <b>1</b>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="dist-bottom-row">
-                                            <ul>
-                                                <li>
-                                                    <b>IDR. 300.000</b>
-                                                </li>
-                                                <li>
-                                                    <button class="dish-add-btn">
-                                                        <i class="uil uil-plus"></i>
-                                                    </button>
+
+
                                                 </li>
                                             </ul>
                                         </div>

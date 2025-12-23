@@ -134,7 +134,7 @@ jQuery(window).on('load', function () {
         targets[i].addEventListener("click", moveBar);
     }
 
-    // initial position on first === All 
+    // initial position on first === All
     gsap.set(".filter-active", {
         x: targets[0].offsetLeft,
         width: targets[0].offsetWidth
@@ -170,3 +170,4 @@ jQuery(window).on('load', function () {
 
     }
 });
+

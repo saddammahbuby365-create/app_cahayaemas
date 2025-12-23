@@ -62,7 +62,9 @@
             <p class="text-muted">Silakan masuk ke akun Anda</p>
         </div>
 
-        <form action="login.php" method="POST">
+        <form action="{{ url('/login') }}" method="POST">
+            @csrf
+
             <!-- Email -->
             <div class="mb-3">
                 <label class="form-label">Email</label>
@@ -85,27 +87,27 @@
                 </div>
             </div>
 
-            <!-- Remember + Forgot -->
+            <!-- Remember -->
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="remember">
+                    <input class="form-check-input" type="checkbox" name="remember" id="remember">
                     <label class="form-check-label" for="remember">
                         Ingat saya
                     </label>
                 </div>
-                <a href="#" class="text-decoration-none">Lupa password?</a>
             </div>
+
+            <!-- Error -->
+            @if (session('error'))
+                <div class="alert alert-danger">
+                    {{ session('error') }}
+                </div>
+            @endif
 
             <!-- Button -->
             <button type="submit" class="btn btn-login w-100 mb-3">
                 <i class="fas fa-sign-in-alt me-1"></i> Login
             </button>
-
-            <!-- Register -->
-            <p class="text-center mb-0">
-                Belum punya akun?
-                <a href="register.html" class="text-decoration-none fw-semibold">Daftar</a>
-            </p>
         </form>
     </div>
 
