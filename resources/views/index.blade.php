@@ -234,97 +234,72 @@
                 </div>
             </section>
 
-            <section style="background-image: url(assets/images/menu-bg.png);"
+            <section style="background-image: url({{ asset('assets/images/menu-bg.png') }});"
                 class="our-menu section bg-light repeat-img" id="menu">
-                <div class="sec-wp">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="sec-title text-center mb-5">
-                                    <p class="sec-sub-title mb-3">Perhiasan Kami</p>
-                                    <h2 class="h2-title">Kilau Kepercayaan, <span>Investasi Berharga!</span></h2>
-                                    <div class="sec-title-shape mb-4">
-                                        <img src="assets/images/title-shape.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
+
+                <div class="container">
+                    <div class="sec-title text-center mb-5">
+                        <p class="sec-sub-title mb-3">Perhiasan Kami</p>
+                        <h2 class="h2-title">Kilau Kepercayaan, <span>Investasi Berharga!</span></h2>
+                        <div class="sec-title-shape mb-4">
+                            <img src="{{ asset('assets/images/title-shape.svg') }}" alt="">
                         </div>
-                        <div class="menu-tab-wp">
-                            <div class="row">
-                                <div class="col-lg-12 m-auto">
-                                    <div class="menu-tab text-center">
-                                        <ul class="filters">
-                                            <div class="filter-active"></div>
-                                            <li class="filter" data-filter=".all, .breakfast, .lunch, .dinner">
-                                                <img src="assets/images/menu-1.png" alt="">
-                                                Semua
+                    </div>
+
+                    <!-- FILTER -->
+                    <div class="menu-tab text-center mb-4">
+                        <ul class="filters">
+                            <li class="filter" data-filter="all">Semua</li>
+                            <li class="filter" data-filter="cincin">Cincin</li>
+                            <li class="filter" data-filter="gelang">Gelang</li>
+                            <li class="filter" data-filter="anting">Anting</li>
+                        </ul>
+                    </div>
+
+                    <!-- PRODUCT LIST -->
+                    <div class="row g-4">
+                        @foreach ($products as $product)
+                            <div class="col-lg-4 col-sm-6 dish-box-wp {{ $product->kategori }}">
+                                <div class="dish-box text-center">
+                                    <div class="dist-img">
+                                        <img src="{{ asset('storage/' . $product->gambar) }}" alt="">
+                                    </div>
+
+                                    <div class="dish-title">
+                                        <h3 class="h3-title">{{ $product->nama }}</h3>
+                                        <p>{{ $product->berat }} Grm ({{ $product->kadar }})</p>
+                                    </div>
+
+                                    <div class="dish-info">
+                                        <ul>
+                                            <li>
+                                                <p>Type</p>
+                                                <b>Gold</b>
                                             </li>
-                                            <li class="filter" data-filter=".breakfast">
-                                                <img src="assets/images/menu-2.png" alt="">
-                                                Cincin
+                                            <li>
+                                                <p>Stok</p>
+                                                <b>{{ $product->stok }}</b>
                                             </li>
-                                            <li class="filter" data-filter=".lunch">
-                                                <img src="assets/images/menu-3.png" alt="">
-                                                Gelang
+                                        </ul>
+                                    </div>
+
+                                    <div class="dist-bottom-row">
+                                        <ul>
+                                            <li>
+                                                <b>IDR {{ number_format($product->harga, 0, ',', '.') }}</b>
                                             </li>
-                                            <li class="filter" data-filter=".dinner">
-                                                <img src="assets/images/menu-4.png" alt="">
-                                                Anting
+                                            <li>
+                                                <button class="dish-add-btn">
+                                                    <i class="uil uil-plus"></i>
+                                                </button>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="menu-list-row">
-                            <div class="row g-xxl-5 bydefault_show" id="menu-dish">
-
-
-                                <!-- 5 -->
-                                <div class="col-lg-4 col-sm-6 dish-box-wp dinner" data-cat="dinner">
-                                    <div class="dish-box text-center">
-                                        <div class="dist-img">
-                                            <img src="assets/images/dish/publish5.jpg" alt="">
-                                        </div>
-                                        <div class="dish-rating">
-                                            5
-                                            <i class="uil uil-star"></i>
-                                        </div>
-                                        <div class="dish-title">
-                                            <h3 class="h3-title">Anting Bunga Cahaya</h3>
-                                            <p>5 Grm (24k)</p>
-                                        </div>
-                                        <div class="dish-info">
-                                            <ul>
-                                                <li>
-                                                    <p>Type</p>
-                                                    <b>Gold</b>
-                                                </li>
-                                                <li>
-                                                    <p>Jumlah</p>
-                                                    <b>1</b>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="dist-bottom-row">
-                                            <ul>
-                                                <li>
-                                                    <b>IDR. 300.000</b>
-                                                </li>
-                                                <li>
-                                                    <button class="dish-add-btn add-to-cart" data-id="5">
-                                                        <i class="uil uil-plus"></i>
-                                                    </button>
-
-
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
+
                 </div>
             </section>
 
