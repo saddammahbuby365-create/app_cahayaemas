@@ -30,6 +30,12 @@ Route::middleware(['auth', 'role:admin'])
             'testimonials/{testimonial}/approve',
             [TestimonialController::class, 'approve']
         )->name('testimonials.approve');
+        Route::get('/admin/laporan', function () {
+            return view('admin.laporan');
+        })->name('admin.laporan');
+        Route::get('/admin/pengaturan', function () {
+            return view('admin.pengaturan');
+        })->name('admin.pengaturan');
     });
 
 Route::get('/user/dashboard', function () {

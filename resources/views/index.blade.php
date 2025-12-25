@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toko Emas Cahaya</title>
-    <link rel="icon" href="assets/images/MEKAR JEWRLY 2-01.png" type="image/png" sizes="192x192">
+    <link rel="icon" href="assets/images/mekarlogo.png" type="image/png">
 
 
     <!-- for icons  -->
@@ -71,14 +71,6 @@
                             <i class="fas fa-search"></i>
                         </button>
                     </form>
-
-                    <!-- Cart -->
-                    <a href="#" class="position-relative text-dark">
-                        <i class="fas fa-shopping-bag fs-5"></i>
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            3
-                        </span>
-                    </a>
 
                     <!-- User / Auth -->
                     @guest
@@ -156,31 +148,24 @@
                 </div>
             </section>
 
-
             <section class="brands-sec">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 text-center">
+
                             <div class="brand-title mb-5">
-                                <h5 class="h5-title">Dipercaya oleh Perusahaan:</h5>
+                                <h5 class="h5-title">Dipercaya oleh Perusahaan</h5>
                             </div>
+
                             <div class="brands-row">
                                 <div class="brands-box">
-                                    <img src="assets/images/brands/b1.png" alt="">
+                                    <img src="assets/images/brands/b1.png" alt="Brand 1">
                                 </div>
                                 <div class="brands-box">
-                                    <img src="assets/images/brands/b2.png" alt="">
-                                </div>
-                                <div class="brands-box">
-                                    <img src="assets/images/brands/b3.png" alt="">
-                                </div>
-                                <div class="brands-box">
-                                    <img src="assets/images/brands/b4.png" alt="">
-                                </div>
-                                <div class="brands-box">
-                                    <img src="assets/images/brands/b5.png" alt="">
+                                    <img src="assets/images/brands/b2.png" alt="Brand 2">
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -307,7 +292,23 @@
                                                         "\n\n" .
                                                         'Mohon info lebih lanjut. Terima kasih.',
                                                 ) }}"
-                                                    target="_blank" class="dish-add-btn" title="Pesan via WhatsApp">
+                                                    target="_blank" title="Pesan via WhatsApp"
+                                                    style="
+            width: 48px;
+            height: 48px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background: #25D366;
+            color: #ffffff;
+            font-size: 22px;
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        "
+                                                    onmouseover="this.style.transform='scale(1.1)'; this.style.background='#1ebe5d';"
+                                                    onmouseout="this.style.transform='scale(1)'; this.style.background='#25D366';">
                                                     <i class="uil uil-whatsapp"></i>
                                                 </a>
                                             </li>
@@ -423,8 +424,8 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-4">
                                     <div class="table-title text-center">
-                                        <h3>Every Day</h3>
-                                        <p>00:00 AM - 12:00 PM</p>
+                                        <h3>Senin - Sabtu</h3>
+                                        <p>07.00 - 18.00 WIB</p>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -435,8 +436,8 @@
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="table-title text-center">
-                                        <h3>Senin - Minggu</h3>
-                                        <p>00:00 - 23:59 WITA</p>
+                                        <h3>Minggu</h3>
+                                        <p>08.00 - 19.00 WIB</p>
                                     </div>
                                 </div>
                             </div>
@@ -444,15 +445,17 @@
 
                         <div class="row" id="gallery">
                             <div class="col-lg-10 m-auto">
-                                <div class="swiper-wrapper">
-                                    <a href="assets/images/map.jpeg" data-fancybox="table-slider"
-                                        class="book-table-img back-img swiper-slide"
-                                        style="background-image: url(assets/images/map.jpeg)"></a>
-
+                                <div class="map-responsive">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d281.2834606299525!2d113.07752239991815!3d-7.714569704592278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7b6bf3b7355a7%3A0xbc8f79665432615b!2sToko%20Emas%20Cahaya%201!5e0!3m2!1sid!2sid!4v1766659548395!5m2!1sid!2sid"
+                                        width="100%" height="450" style="border:0; border-radius: 10px;"
+                                        allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
                                 </div>
-
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -460,6 +463,8 @@
             <section class="our-team section">
                 <div class="sec-wp">
                     <div class="container">
+
+                        <!-- Title -->
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="sec-title text-center mb-5">
@@ -472,63 +477,63 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 swiper-slide">
-                            <div class="team-box text-center">
-                                <div style="background-image: url(assets/images/Tim/Boby.jpg);"
-                                    class="team-img back-img">
+                        <!-- Team Members -->
+                        <div class="row justify-content-center">
 
-                                </div>
-                                <h3 class="h3-title">boby</h3>
-                                <p class="team-sub-title">Backend</p>
-                                <div class="social-icon">
+                            <!-- Boby -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="team-box text-center">
+                                    <div class="team-img back-img"
+                                        style="background-image: url(assets/images/Tim/Boby.jpg);">
+                                    </div>
+
+                                    <h3 class="h3-title">Boby</h3>
+                                    <p class="team-sub-title">Backend</p>
+
                                     <div class="social-icon">
                                         <ul>
                                             <li>
                                                 <a href="#"><i class="uil uil-facebook-f"></i></a>
                                             </li>
                                             <li>
-                                                <a href="https://www.instagram.com/yk.boby?igsh=MXJsYTBvNXZsMXRxeg==">
+                                                <a href="https://www.instagram.com/yk.boby">
                                                     <i class="uil uil-instagram"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#">
-                                                    <i class="uil uil-youtube"></i>
-                                                </a>
+                                                <a href="#"><i class="uil uil-youtube"></i></a>
                                             </li>
                                         </ul>
                                     </div>
+                                </div>
+                            </div>
 
-                                    <div class="col-lg-4 swiper-slide">
-                                        <div class="team-box text-center">
-                                            <div style="background-image: url(assets/images/Tim/falah.jpeg);"
-                                                class="team-img back-img">
+                            <!-- Falah -->
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="team-box text-center">
+                                    <div class="team-img back-img"
+                                        style="background-image: url(assets/images/Tim/falah.jpeg);">
+                                    </div>
 
-                                            </div>
-                                            <h3 class="h3-title">falah</h3>
-                                            <p class="team-sub-title">ui ux</p>
-                                            <div class="social-icon">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#"><i class="uil uil-facebook-f"></i></a>
-                                                    </li>
-                                                    <li>
-                                                        <a
-                                                            href="https://www.instagram.com/yk.boby?igsh=MXJsYTBvNXZsMXRxeg==">
-                                                            <i class="uil uil-instagram"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <i class="uil uil-youtube"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                    <h3 class="h3-title">Falah</h3>
+                                    <p class="team-sub-title">UI / UX</p>
+
+                                    <div class="social-icon">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.instagram.com/falahaprizal_"><i class="uil uil-instagram"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="uil uil-youtube"></i></a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -569,14 +574,41 @@
                                 </div>
                             </div>
                         @endforeach
-                        <a href="{{ route('testimoni.create') }}" class="btn btn-outline-primary mt-4">
-                            Kirim Testimoni
+                        <a href="{{ route('testimoni.create') }}"
+                            style="
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 28px;
+        margin-top: 16px;
+        border-radius: 30px;
+        border: 2px solid #ff8243;
+        color: #ff8243;
+        font-weight: 600;
+        text-decoration: none;
+        background: transparent;
+        transition: all 0.3s ease;
+   "
+                            onmouseover="
+        this.style.background='#ff8243';
+        this.style.color='#ffffff';
+        this.style.transform='translateY(-3px)';
+        this.style.boxShadow='0 10px 25px rgba(255,130,67,0.4)';
+   "
+                            onmouseout="
+        this.style.background='transparent';
+        this.style.color='#ff8243';
+        this.style.transform='translateY(0)';
+        this.style.boxShadow='none';
+   ">
+                            ✍️ Kirim Testimoni
                         </a>
                     </div>
                 </div>
             </section>
 
-            <section class="faq-sec section-repeat-img" style="background-image: url(assets/images/faq-bg.png);">
+            <section class="faq-sec section-repeat-img mt-5" style="">
                 <div class="sec-wp">
                     <div class="container">
                         <div class="row">
@@ -627,7 +659,7 @@
             </section>
 
 
-            <div class="bg-pattern bg-light repeat-img"
+            <div class="bg-pattern repeat-img mt-5"
                 style="background-image: url(assets/images/blog-pattern-bg.png);">
                 <section class="newsletter-sec section pt-0">
                     <div class="sec-wp">
@@ -693,7 +725,7 @@
                                         <div class="footer-table-info">
                                             <h3 class="h3-title">Jam Buka</h3>
                                             <ul>
-                                                <li><i class="uil uil-clock"></i> Senin - Minggu : 00:00 - 23:59 WITA
+                                                <li><i class="uil uil-clock"></i> Senin - Sabtu : 07:00 - 18.00 WIB
                                                 </li>
                                             </ul>
                                         </div>
