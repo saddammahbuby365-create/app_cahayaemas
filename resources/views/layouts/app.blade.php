@@ -65,8 +65,8 @@
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">
-                    <i class="fas fa-money-bill-wave me-2"></i> Transaksi
+                <a href="{{ route('testimonials.index') }}" class="nav-link">
+                    <i class="fas fa-money-bill-wave me-2"></i> Testimonials
                 </a>
             </li>
 

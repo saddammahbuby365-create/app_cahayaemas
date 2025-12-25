@@ -548,39 +548,30 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <div class="testimonials-img">
-                                    <img src="assets/images/MEKAR JEWRLY 2-01.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-7">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="testimonials-box">
-                                            <div class="testimonial-box-top">
-                                                <div class="testimonials-box-img back-img"
-                                                    style="background-image: url(assets/images/Testimoni/aca\ .jpeg);">
-                                                </div>
-                                                <div class="star-rating-wp">
-                                                    <div class="star-rating">
-                                                        <span class="star-rating__fill" style="width:85%"></span>
-                                                    </div>
-                                                </div>
+                        @foreach ($testimonials as $item)
+                            <div class="testimonials-box">
+                                <div class="testimonial-box-top">
+                                    <div class="testimonials-box-img back-img"
+                                        style="background-image: url({{ asset('storage/' . $item->foto) }});">
+                                    </div>
 
-                                            </div>
-                                            <div class="testimonials-box-text">
-                                                <h3 class="h3-title">
-                                                    aca
-                                                </h3>
-                                                <p>Pengalaman berbelanja di Emas Cahaya sangat menyenangkan!
-                                                    Pelayanan yang ramah dan informatif.</p>
-                                            </div>
+                                    <div class="star-rating-wp">
+                                        <div class="star-rating">
+                                            <span class="star-rating__fill"
+                                                style="width:{{ $item->rating * 20 }}%"></span>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="testimonials-box-text">
+                                    <h3 class="h3-title">{{ $item->nama }}</h3>
+                                    <p>{{ $item->pesan }}</p>
+                                </div>
                             </div>
-                        </div>
+                        @endforeach
+                        <a href="{{ route('testimoni.create') }}" class="btn btn-outline-primary mt-4">
+                            Kirim Testimoni
+                        </a>
                     </div>
                 </div>
             </section>
