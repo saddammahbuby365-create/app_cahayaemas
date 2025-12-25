@@ -57,9 +57,6 @@
                         <a class="nav-link" href="#gallery">Lokasi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Kontak Kami</a>
                     </li>
                 </ul>
@@ -238,66 +235,94 @@
                 class="our-menu section bg-light repeat-img" id="menu">
 
                 <div class="container">
+
+                    <!-- SECTION TITLE -->
                     <div class="sec-title text-center mb-5">
                         <p class="sec-sub-title mb-3">Perhiasan Kami</p>
-                        <h2 class="h2-title">Kilau Kepercayaan, <span>Investasi Berharga!</span></h2>
+                        <h2 class="h2-title">
+                            Kilau Kepercayaan, <span>Investasi Berharga!</span>
+                        </h2>
                         <div class="sec-title-shape mb-4">
                             <img src="{{ asset('assets/images/title-shape.svg') }}" alt="">
                         </div>
                     </div>
 
-                    <!-- FILTER -->
-                    <div class="menu-tab text-center mb-4">
-                        <ul class="filters">
-                            <li class="filter" data-filter="all">Semua</li>
-                            <li class="filter" data-filter="cincin">Cincin</li>
-                            <li class="filter" data-filter="gelang">Gelang</li>
-                            <li class="filter" data-filter="anting">Anting</li>
-                        </ul>
-                    </div>
-
                     <!-- PRODUCT LIST -->
-                    <div class="row g-4">
-                        @foreach ($products as $product)
-                            <div class="col-lg-4 col-sm-6 dish-box-wp {{ $product->kategori }}">
+                    <div class="row">
+
+                        @forelse ($products as $product)
+                            <div class="col-lg-4 col-md-6 mb-4">
+
                                 <div class="dish-box text-center">
-                                    <div class="dist-img">
-                                        <img src="{{ asset('storage/' . $product->gambar) }}" alt="">
+
+                                    <!-- IMAGE -->
+                                    <div class="dist-img mb-3">
+                                        <img src="{{ asset('storage/' . $product->gambar) }}"
+                                            alt="{{ $product->nama }}" style="width:100%; height:auto;">
                                     </div>
 
+                                    <!-- TITLE -->
                                     <div class="dish-title">
                                         <h3 class="h3-title">{{ $product->nama }}</h3>
                                         <p>{{ $product->berat }} Grm ({{ $product->kadar }})</p>
                                     </div>
 
+                                    <!-- INFO -->
                                     <div class="dish-info">
-                                        <ul>
+                                        <ul class="list-unstyled d-flex justify-content-center gap-4">
                                             <li>
-                                                <p>Type</p>
+                                                <p class="mb-1">Type</p>
                                                 <b>Gold</b>
                                             </li>
                                             <li>
-                                                <p>Stok</p>
+                                                <p class="mb-1">Stok</p>
                                                 <b>{{ $product->stok }}</b>
                                             </li>
                                         </ul>
                                     </div>
 
-                                    <div class="dist-bottom-row">
-                                        <ul>
+                                    <!-- PRICE & ACTION -->
+                                    <div class="dist-bottom-row mt-3">
+                                        <ul
+                                            class="list-unstyled d-flex justify-content-between align-items-center px-3">
                                             <li>
                                                 <b>IDR {{ number_format($product->harga, 0, ',', '.') }}</b>
                                             </li>
                                             <li>
-                                                <button class="dish-add-btn">
-                                                    <i class="uil uil-plus"></i>
-                                                </button>
+                                                <a href="https://wa.me/6283133977214?text={{ urlencode(
+                                                    'Halo Admin, saya tertarik dengan produk berikut:' .
+                                                        "\n\n" .
+                                                        'Nama Produk : ' .
+                                                        $product->nama .
+                                                        "\n" .
+                                                        'Berat       : ' .
+                                                        $product->berat .
+                                                        ' Gram' .
+                                                        "\n" .
+                                                        'Kadar       : ' .
+                                                        $product->kadar .
+                                                        "\n" .
+                                                        'Harga       : IDR ' .
+                                                        number_format($product->harga, 0, ',', '.') .
+                                                        "\n\n" .
+                                                        'Mohon info lebih lanjut. Terima kasih.',
+                                                ) }}"
+                                                    target="_blank" class="dish-add-btn" title="Pesan via WhatsApp">
+                                                    <i class="uil uil-whatsapp"></i>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
+
                                 </div>
+
                             </div>
-                        @endforeach
+                        @empty
+                            <div class="col-12 text-center">
+                                <p>Data produk kosong</p>
+                            </div>
+                        @endforelse
+
                     </div>
 
                 </div>
@@ -428,7 +453,8 @@
 
                             </div>
                         </div>
-
+                    </div>
+                </div>
             </section>
 
             <section class="our-team section">
@@ -501,7 +527,11 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section class="testimonials section bg-light">
@@ -545,72 +575,6 @@
                                                 </h3>
                                                 <p>Pengalaman berbelanja di Emas Cahaya sangat menyenangkan!
                                                     Pelayanan yang ramah dan informatif.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="testimonials-box">
-                                            <div class="testimonial-box-top">
-                                                <div class="testimonials-box-img back-img"
-                                                    style="background-image: url(assets/images/Testimoni/dika.jpeg);">
-                                                </div>
-                                                <div class="star-rating-wp">
-                                                    <div class="star-rating">
-                                                        <span class="star-rating__fill" style="width:80%"></span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="testimonials-box-text">
-                                                <h3 class="h3-title">
-                                                    randyka
-                                                </h3>
-                                                <p>Toko Emas Cahaya selalu memberikan yang terbaik. Harga yang
-                                                    kompetitif dan desain yang elegan.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="testimonials-box">
-                                            <div class="testimonial-box-top">
-                                                <div class="testimonials-box-img back-img"
-                                                    style="background-image: url(assets/images/Testimoni/dika\ 2.jpeg);">
-                                                </div>
-                                                <div class="star-rating-wp">
-                                                    <div class="star-rating">
-                                                        <span class="star-rating__fill" style="width:89%"></span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="testimonials-box-text">
-                                                <h3 class="h3-title">
-                                                    dika heker
-                                                </h3>
-                                                <p>Emas Cahaya adalah tempat terbaik untuk membeli perhiasan emas.
-                                                    Saya membeli kalung dan gelang di sini.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="testimonials-box">
-                                            <div class="testimonial-box-top">
-                                                <div class="testimonials-box-img back-img"
-                                                    style="background-image: url(assets/images/Testimoni/udin.jpeg);">
-                                                </div>
-                                                <div class="star-rating-wp">
-                                                    <div class="star-rating">
-                                                        <span class="star-rating__fill" style="width:100%"></span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="testimonials-box-text">
-                                                <h3 class="h3-title">
-                                                    udin
-                                                </h3>
-                                                <p>Saya sudah beberapa kali membeli perhiasan di Emas Cahaya, dan selalu
-                                                    puas.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -674,70 +638,6 @@
 
             <div class="bg-pattern bg-light repeat-img"
                 style="background-image: url(assets/images/blog-pattern-bg.png);">
-                <section class="blog-sec section" id="blog">
-                    <div class="sec-wp">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="sec-title text-center mb-5">
-                                        <p class="sec-sub-title mb-3">Blog Kami</p>
-                                        <h2 class="h2-title">Publikasi Terbaru</span></h2>
-                                        <div class="sec-title-shape mb-4">
-                                            <img src="assets/images/title-shape.svg" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="blog-box">
-                                        <div class="blog-img back-img"
-                                            style="background-image: url(assets/images/blog/publish1.jpg);"></div>
-                                        <div class="blog-text">
-                                            <p class="blog-date">27, Oktober, 2024</p>
-                                            <a href="#" class="h4-title">Cincin Couple</a>
-                                            <p style="text-align: justify;">Cincin Couple, sepasang cincin eksklusif
-                                                dengan desain unik,
-                                                hanya tersedia dalam jumlah terbatas, simbol cinta dan komitmen yang
-                                                istimewa untuk pasangan.</p>
-                                            <a href="#" class="sec-btn">Selengkapnya</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="blog-box">
-                                        <div class="blog-img back-img"
-                                            style="background-image: url(assets/images/blog/publish2.jpg);"></div>
-                                        <div class="blog-text">
-                                            <p class="blog-date">25, Juni, 2024</p>
-                                            <a href="#" class="h4-title">Gelang SI.SE.SA Rolex</a>
-                                            <p style="text-align: justify;">Gelang SI.SE.SA Rolex adalah aksesori mewah
-                                                yang menggabungkan desain elegan dan kualitas tinggi,
-                                                cocok untuk mereka yang mengutamakan kemewahan dan gaya.</p>
-                                            <a href="#" class="sec-btn">Selengkapnya</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="blog-box">
-                                        <div class="blog-img back-img"
-                                            style="background-image: url(assets/images/blog/publish3.jpg);"></div>
-                                        <div class="blog-text">
-                                            <p class="blog-date">25, Juni, 2024</p>
-                                            <a href="#" class="h4-title">Cincin Model Audi</a>
-                                            <p style="text-align: justify;">Cincin Model Audi adalah cincin dengan
-                                                desain unik terinspirasi dari keanggunan dan gaya khas Audi.
-                                                Memadukan kesan modern dan elegan, cincin ini cocok bagi mereka yang
-                                                menyukai tampilan mewah dan berkelas.</p>
-                                            <a href="#" class="sec-btn">Selengkapnya</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 <section class="newsletter-sec section pt-0">
                     <div class="sec-wp">
                         <div class="container">

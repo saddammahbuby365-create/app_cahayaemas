@@ -59,7 +59,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{ route('products.index') }}" class="nav-link">
                     <i class="fas fa-gem me-2"></i> Produk Emas
                 </a>
             </li>

@@ -4,11 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 
-class ProductController extends Controller
+class HomeController extends Controller
 {
     public function index()
     {
         $products = Product::all();
-        return view('home', compact('products'));
+        return view('index', compact('products'));
     }
 }
